@@ -57,22 +57,14 @@ spec:
       action: fetch:template
       input:
         url: ./skeleton
-        copyWithoutRender:
-          - .github/workflows/*
         values:
-          component_id: "{{ parameters.component_id }}"
-          description: "{{ parameters.description }}"
-          artifact_id: "{{ parameters.component_id }}"
-          go_module_name: "{{ parameters.go_module_name }}"
-          owner: "{{ parameters.owner }}"
-          destination: "{{ parseRepoUrl parameters.repoUrl }}"
-          http_port: 8080
+          name: ${{ parameters.name }}
     - id: publish
       name: Publish
       action: publish:gitlab
       input:
         allowedHosts: ["gitlab.com"]
-        description: "This is {{ parameters.component_id }}"
+        description: "This is {{ parameters.name }}"
         repoUrl: "{{ parameters.repoUrl }}"
 
     - id: register
