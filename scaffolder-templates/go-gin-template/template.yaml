@@ -55,7 +55,7 @@ spec:
       name: Fetch Skeleton + Template
       action: fetch:template
       input:
-        url: ./skeleton
+        url: https://gitlab.com/cjexpress/tildi/signac/software-templates/-/tree/main/scaffolder-templates/go-gin-template/skeleton
         values:
           name: ${{ parameters.component_id }}
     - id: publish
