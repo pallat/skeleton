@@ -55,11 +55,10 @@ spec:
       name: Fetch Skeleton + Template
       action: fetch:template
       input:
-        url: https://gitlab.com/cjexpress/tildi/signac/software-templates/-/tree/main/scaffolder-templates/go-gin-template/skeleton
+        url: https://github.com/pallat/ago
         values:
           name: ${{ parameters.component_id }}
           owner: ${{ parameters.owner }}
-          token: ${GITLAB_TOKEN}
     - id: publish
       name: Publish
       action: publish:gitlab
