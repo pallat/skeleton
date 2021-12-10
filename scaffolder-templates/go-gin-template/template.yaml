@@ -7,7 +7,6 @@ metadata:
   tags:
     - recommended
     - go
-    - REST
 spec:
   owner: pallat.anc@cjexpress.co.th
   type: service
