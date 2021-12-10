@@ -22,7 +22,7 @@ spec:
           title: Name
           type: string
           description: Unique name of the component
-        java_package_name:
+        go_package_name:
           title: Go Package Name
           type: string
           description: Name for the Go package. eg (io.backstage.blah)
