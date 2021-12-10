@@ -59,6 +59,7 @@ spec:
         values:
           name: ${{ parameters.component_id }}
           owner: ${{ parameters.owner }}
+          token: ${GITLAB_TOKEN}
     - id: publish
       name: Publish
       action: publish:gitlab
