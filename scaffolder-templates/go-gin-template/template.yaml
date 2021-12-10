@@ -57,13 +57,13 @@ spec:
       input:
         url: ./skeleton
         values:
-          name: ${{ parameters.name }}
+          name: ${{ parameters.component_id }}
     - id: publish
       name: Publish
       action: publish:gitlab
       input:
         allowedHosts: ["gitlab.com"]
-        description: "This is {{ parameters.name }}"
+        description: "This is {{ parameters.component_id }}"
         repoUrl: "{{ parameters.repoUrl }}"
 
     - id: register
