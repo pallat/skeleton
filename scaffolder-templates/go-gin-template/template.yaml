@@ -58,6 +58,7 @@ spec:
         url: https://gitlab.com/cjexpress/tildi/signac/software-templates/-/tree/main/scaffolder-templates/go-gin-template/skeleton
         values:
           name: ${{ parameters.component_id }}
+          owner: ${{ parameters.owner }}
     - id: publish
       name: Publish
       action: publish:gitlab
